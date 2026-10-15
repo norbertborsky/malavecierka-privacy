@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="sk">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Večierka – ochrana súkromia</title>
+<style>
+  :root { color-scheme: light; background: #efe4cb; color: #2a1f18; font: 1rem/1.65 system-ui, sans-serif; }
+  body { max-width: 46rem; margin: 0 auto; padding: 2rem max(1.25rem, env(safe-area-inset-left)); }
+  h1, h2 { line-height: 1.2; } h1 { font-size: clamp(2rem, 6vw, 3rem); } h2 { margin-top: 2rem; font-size: 1.35rem; }
+  a { color: #38614a; text-underline-offset: .18em; overflow-wrap: anywhere; }
+  small { font-size: .9rem; } li + li { margin-top: .5rem; }
+</style>
+<main>
+  <p>Večierka · Android a Wear OS</p>
+  <h1>Ochrana súkromia</h1>
+  <p><small>Platné od 15. októbra 2026</small></p>
+  <p>Večierka je neoficiálna aplikácia od vývojára Norberta Borského pre existujúci,
+    vekovo overený účet v obchode <a href="https://malavecierka.sk/">Malá večierka</a>.
+    Vývojár aplikácie nie je prevádzkovateľom obchodu.</p>
+  <h2>Údaje pri prihlásení a zobrazení kódu</h2>
+  <p>Pri prihlásení aplikácia odošle váš e-mail a heslo priamo obchodu malavecierka.sk
+    cez HTTPS. Pri získaní vstupného kódu odosiela obchodu e-mail a prihlasovací token.
+    Obchod vráti QR kód a jeho platnosť. Ak token výslovne odmietne ako neplatný alebo
+    vypršaný, aplikácia môže obnoviť prihlásenie pomocou uloženého hesla.</p>
+  <p>Vývojár neprevádzkuje prihlasovací server a tieto údaje nedostáva na vlastný
+    server. Údaje spracúvané obchodom sa riadia pravidlami jeho prevádzkovateľa.</p>
+  <h2>Údaje uložené v zariadení</h2>
+  <p>E-mail, heslo a token sa ukladajú šifrovane pomocou Android Keystore na každom
+    zariadení, na ktorom sa prihlásite. Uloženie účtu vyžaduje zámok obrazovky.
+    Zálohovanie a prenos týchto údajov na iné zariadenie sú vypnuté.</p>
+  <p>QR kód sa neukladá na disk a nie je dostupný ako vstupenka bez pripojenia.
+    Skryje sa, keď aplikácia nie je aktívna, zariadenie je zamknuté alebo kód vyprší.
+    Aplikácia si ďalej pamätá zobrazenie návodu a na telefóne krátkodobú žiadosť
+    o prihlásenie hodiniek. Žiadosť platí najviac päť minút.</p>
+  <h2>Prepojenie telefónu a hodiniek</h2>
+  <p>Hodinky môžu použiť účet uložený v systémovom správcovi hesiel. Pri prihlásení
+    cez telefón zadáte údaje v telefónnej aplikácii. Až po vašom výslovnom potvrdení
+    telefón pošle e-mail, heslo a token cez Wear OS Data Layer iba spárovaným hodinkám,
+    ktoré si prihlásenie vyžiadali. Telefón aj hodinky musia byť odomknuté a chránené
+    zámkom obrazovky.</p>
+  <p>Uloženie hesla do systémového správcu hesiel je voliteľné. Takto uložené heslo
+    spravuje zvolený poskytovateľ podľa vašich nastavení. Inštalácia do hodiniek
+    otvára Google Play; inštaláciu potvrdzujete vy.</p>
+  <h2>Odhlásenie a vymazanie údajov</h2>
+  <p>Odhlásenie vymaže uložený účet a reláciu z daného zariadenia. Na ostatných
+    zariadeniach zostávate prihlásení. Údaje aplikácie môžete tiež odstrániť v
+    nastaveniach Androidu alebo aplikáciu odinštalovať. Heslo uložené do systémového
+    správcu hesiel sa spravuje samostatne u jeho poskytovateľa.</p>
+  <p>Odhlásenie neruší token na serveri a nevymaže účet v obchode. Aplikácia účty
+    nevytvára. S prístupom k účtu, opravou alebo vymazaním údajov uložených v obchode
+    sa obráťte na jeho prevádzkovateľa cez
+    <a href="https://malavecierka.sk/">malavecierka.sk</a>.</p>
+  <h2>Reklamy, analytika a služby zariadenia</h2>
+  <p>Aplikácia nemá reklamy, sledovacie nástroje ani vlastnú analytiku. Google a
+    výrobca zariadenia môžu podľa vašich nastavení spracúvať systémovú diagnostiku,
+    údaje správcu hesiel a údaje potrebné na fungovanie ich služieb.</p>
+  <p>Túto stránku poskytuje GitHub Pages. Pri jej otvorení môže GitHub spracovať
+    technické údaje požiadavky podľa svojich
+    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">pravidiel súkromia</a>.
+    Aplikácia stránku automaticky nenačítava.</p>
+  <h2>Kontakt na vývojára</h2>
+  <p>Norbert Borský · <a href="mailto:noro.borsky@gmail.com">noro.borsky@gmail.com</a></p>
+</main>
+</html>
