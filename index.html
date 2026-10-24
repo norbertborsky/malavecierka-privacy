@@ -11,9 +11,9 @@
   small { font-size: .9rem; } li + li { margin-top: .5rem; }
 </style>
 <main>
-  <p>Večierka · Android a Wear OS</p>
+  <p>Večierka · Android, Wear OS a Garmin</p>
   <h1>Ochrana súkromia</h1>
-  <p><small>Platné od 15. októbra 2026</small></p>
+  <p><small>Platné od 24. októbra 2026</small></p>
   <p>Večierka je neoficiálna aplikácia od vývojára Norberta Borského pre existujúci,
     vekovo overený účet v obchode <a href="https://malavecierka.sk/">Malá večierka</a>.
     Vývojár aplikácie nie je prevádzkovateľom obchodu.</p>
@@ -25,10 +25,10 @@
   <p>Vývojár neprevádzkuje prihlasovací server a tieto údaje nedostáva na vlastný
     server. Údaje spracúvané obchodom sa riadia pravidlami jeho prevádzkovateľa.</p>
   <h2>Údaje uložené v zariadení</h2>
-  <p>E-mail, heslo a token sa ukladajú šifrovane pomocou Android Keystore na každom
-    zariadení, na ktorom sa prihlásite. Uloženie účtu vyžaduje zámok obrazovky.
+  <p>Na Androide vrátane Wear OS sa e-mail, heslo a token ukladajú šifrovane pomocou
+    Android Keystore na zariadení, na ktorom sa prihlásite. Uloženie účtu vyžaduje zámok obrazovky.
     Zálohovanie a prenos týchto údajov na iné zariadenie sú vypnuté.</p>
-  <p>QR kód sa neukladá na disk a nie je dostupný ako vstupenka bez pripojenia.
+  <p>V aplikácii pre Android a Wear OS sa QR kód neukladá na disk a nie je dostupný ako vstupenka bez pripojenia.
     Skryje sa, keď aplikácia nie je aktívna, zariadenie je zamknuté alebo kód vyprší.
     Aplikácia si ďalej pamätá zobrazenie návodu a na telefóne krátkodobú žiadosť
     o prihlásenie hodiniek. Žiadosť platí najviac päť minút.</p>
@@ -41,6 +41,22 @@
   <p>Uloženie hesla do systémového správcu hesiel je voliteľné. Takto uložené heslo
     spravuje zvolený poskytovateľ podľa vašich nastavení. Inštalácia do hodiniek
     otvára Google Play; inštaláciu potvrdzujete vy.</p>
+  <h2>Hodinky Garmin</h2>
+  <p>Garmin používa samostatnú aplikáciu z Connect IQ Store. Prepojenie povoľujete
+    naskenovaním dočasného párovacieho QR priamo z hodiniek a potvrdením na oboch
+    zariadeniach. Telefón uchováva povolenie pre tieto hodinky vo vlastnom šifrovanom
+    úložisku Android Keystore. Do hodiniek prenáša iba vyžiadaný čerstvý vstupný QR
+    šifrovaným spojením cez Garmin Connect. Heslo Garminu neposiela.</p>
+  <p>Spojenie cez telefón zapínate sami počas odomknutia. Počas behu sa zobrazuje
+    trvalé oznámenie s možnosťou vypnutia. Po ukončení procesu sa samo neobnoví.
+    Samostatné používanie na podporovaných modeloch povoľujete osobitne. Vtedy sa
+    na hodinky prenesie e-mail a aktuálny token účtu; jeho obnovenie vyžaduje telefón.
+    Sieťové požiadavky používajú služby Garminu a HTTPS obchodu malavecierka.sk.</p>
+  <p>Garmin šifruje objektové úložisko aplikácií podpísaných Connect IQ Store.
+    Toto úložisko nie je Android Keystore. Vývojové zostavy sú iba na syntetické
+    údaje. QR kódy sa neukladajú a po odchode z aplikácie alebo vypršaní sa skryjú.
+    Odhlásenie telefónu odstráni jeho povolenia Garmin. Nedostupné samostatné
+    hodinky odhláste aj priamo na nich; telefón ich nedokáže vymazať na diaľku.</p>
   <h2>Odhlásenie a vymazanie údajov</h2>
   <p>Odhlásenie vymaže uložený účet a reláciu z daného zariadenia. Na ostatných
     zariadeniach zostávate prihlásení. Údaje aplikácie môžete tiež odstrániť v
